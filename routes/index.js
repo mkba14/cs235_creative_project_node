@@ -27,11 +27,4 @@ router.get('/cards/shuffle', function(req, res, next){
    request(data).pipe(res);
 });
 
-router.get('/cards/hand', function(req, res, next){
-  
-  var data = "https://deckofcardsapi.com/api/deck/" + req.query.id + "/pile/"+ req.query.pid + "/add/?cards=" + req.query.cds;
-  
-
-});
-
 module.exports = router;
