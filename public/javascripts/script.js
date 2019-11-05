@@ -16,8 +16,7 @@ var app = new Vue({
     loading: true,
   },
   created() {
-    this.loading = true;
-    // load all cities
+   
   },
   methods: {
     fetchDND() {
