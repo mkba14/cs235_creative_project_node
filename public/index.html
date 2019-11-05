@@ -10,13 +10,17 @@
 <body class="bg">
 
   <div id="app">
+    <form  @submit.prevent="cardGetDraw">
+      <button type="submit">Draw card</button>
+    </form>
+    
   </div>
   
   <footer class="footer">
     <a href="https://github.com/mkba14/cs260_creative_project_node.git">Github Classroom</a>
-    <a href="https://open5e.com/legal">Dungeons & Dragons API Information</a>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" integrity="sha256-lrZTgsdM1iVdRigETFOU8u8/BmLX1ysQ8bzrULbuVFU=" crossorigin="anonymous"></script>
   <script src="javascripts/script.js"></script>
 
 </body>

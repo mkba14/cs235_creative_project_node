@@ -17,7 +17,8 @@ router.get('/cards/new', function(req, res, next) {
 
 router.get('/cards/draw', function(req, res, next) {
   console.log("new deck retrieved", req.query.num);
-  var data = "https://deckofcardsapi.com/api/deck/" + req.query.id + "/draw/?count=" + req.query.num;
+  console.log(req);
+  var data = "https://deckofcardsapi.com/api/deck/" + req.query.id + "/draw/?count=1" /*+ req.query.num*/;
   console.log(data);
   request(data).pipe(res);
 });
