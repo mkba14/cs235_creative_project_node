@@ -1,4 +1,6 @@
 var express = require('express');
+var request = require('request');
+
 var router = express.Router();
 
 /* GET home page. */
@@ -13,7 +15,9 @@ router.get('/dnd', function(req, res, next){
   
   // q = ... if we had used something else, it would have changed?
   console.log(req.query.q);
+  
   var dndRest = "https://api.open5e.com/" + req.query.q + "/?format=json"
+  //var dndRest = "http://dnd5eapi.co/api/" + req.query.q;
   //"https://api.open5e.com/monsters/?format=json"
   console.log(dndRest);
   request(dndRest).pipe(res); 
@@ -25,6 +29,7 @@ router.get('/dnd/monsters', function(req, res, next){
   
   // q = ... if we had used something else, it would have changed?
   console.log(req.query.q);
+  //var dndRest = "http://dnd5eapi.co/api/monsters"
   var dndRest = "https://api.open5e.com/monsters/?"+req.query.q+"&format=json"
   //"https://api.open5e.com/monsters/?format=json"
   console.log(dndRest);
