@@ -10,7 +10,15 @@ var app = new Vue({
    
   },
   methods: {
-    fetchDeck() {
+    async fetchDeck() {
+      try {
+        let response = await axios.get(url);
+        
+      }
+      catch(error)
+      {
+        console.log(error);
+      }
     },
   },
 });

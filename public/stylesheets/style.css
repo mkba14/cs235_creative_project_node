@@ -1,12 +1,17 @@
 html {
   height: 100%;
 }
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: green;
   background-image: radial-gradient(green, darkgreen, #004D00);
   min-height: 100%;
+}
+
+#app {
+  min-height: 80%;
 }
 
 a {
