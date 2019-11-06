@@ -12,11 +12,11 @@
   <div id="app">
     <div class="corners">
       <div class="top-left">
-        <h1>Player 1</h1>
+        <h1>Player&nbsp1</h1>
       </div>
-      <div class="bottom-right">
+      <div class="bottom-left">
         <form @submit.prevent="cardGetDraw">
-          <button type="submit">Player 1 - Draw card</button>
+          <button type="submit">Draw&nbspcard</button>
         </form>
       </div>
     </div>
@@ -28,20 +28,21 @@
         <img class="img" v-bind:src="card.images.png" />
       </div>
       <div class="cards">
-        <img class="img" src="images/brown_bubbles_back.png">
+        <!--<img class="img" src="images/brown_bubbles_back.png">-->
 
       </div>
     </div>
 
+    <hr>
 
 
     <div class="corners">
       <div class="top-left">
         <h1>Player 2</h1>
       </div>
-      <div class="bottom-right">
+      <div class="bottom-left">
         <form @submit.prevent="cardGetDraw_hand2">
-          <button type="submit">Player 2 -Draw card</button>
+          <button type="submit">Draw&nbspcard</button>
         </form>
       </div>
       <div class="flex-container-row">

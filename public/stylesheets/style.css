@@ -25,7 +25,7 @@ a {
 }
 
 .top-left {
-    flex: 50%; 
+    flex: 10%; 
 }
 
 .top-right {
@@ -50,7 +50,7 @@ a {
 }
 
 .cards{
-  width: 10%
+  width: 10%;
 }
 
 .cards_hidden{
@@ -64,18 +64,46 @@ a {
 .img{
   /*max-height: 200px;*/
   max-height: 207px;
+  border-radius: 10px;
 }
-  
-.item {
-  background-color: navy;
-  width: 100px;
-  height: 200px;
+
+.cards .img{
+    box-shadow: -2px -0px 20px black;
+
 }
 
 .footer {
-  margin-top: 10%;
+  margin-top: 5%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-left: -5%;
   text-align: center;
+  padding-bottom: 2%;
+  background-color: darkgreen;
 }
+
+h1 {
+  color: white;
+  font-size: 24pt;
+}
+
+button {
+  color: white;
+  font-size: 24pt;
+  padding: 3%;
+  cursor: pointer;
+  background-color: #662d04;
+  border-radius: 14pt;
+  border: 2px solid black;
+  border-left-color: darkgrey;
+  border-top-color: darkgrey;
+}
+
+button:hover {
+  box-shadow: 0px 0px 12px black;
+}
+
 /*
 .flex-container {
   display: flex;

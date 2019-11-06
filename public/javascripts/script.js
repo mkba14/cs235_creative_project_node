@@ -4,7 +4,7 @@ var app = new Vue({
   data: {
     deckId: "",
     cards: "",
-    hand_1: [],// [],
+    hand_1: [],
     hand_2: [],
     p1: false,
     p2: false,
