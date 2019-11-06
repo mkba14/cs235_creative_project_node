@@ -3,21 +3,71 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Definitions & Cities</title>
+  <title>Play a Card Game</title>
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body class="bg">
 
   <div id="app">
-    <form  @submit.prevent="cardGetDraw">
-      <button type="submit">Draw card</button>
-    </form>
-    
+    <div class="corners">
+      <div class="top-left">
+        <h1>Player 1</h1>
+      </div>
+      <div class="bottom-right">
+        <form @submit.prevent="cardGetDraw">
+          <button type="submit">Player 1 - Draw card</button>
+        </form>
+      </div>
+    </div>
+    <div class="flex-container-row">
+
+      <div class="cards" v-for="card in hand_1">
+        <img class="img" v-bind:src="card.images.png" />
+      </div>
+    </div>
+
+
+
+    <div class="corners">
+      <div class="top-left">
+        <h1>Player 2</h1>
+      </div>
+      <div class="bottom-right">
+        <form @submit.prevent="cardGetDraw_hand2">
+          <button type="submit">Player 2 -Draw card</button>
+        </form>
+      </div>
+      <div class="flex-container-row">
+
+        <div class="cards" v-for="card in hand_2">
+          <img class="img" v-bind:src="card.images.png" />
+        </div>
+      </div>
+
+
+    </div>
+    <!--
+    <div class="flex-container-row">
+      <div class="flex-container-col">
+        <div v-for="card in hand_1">
+          <img class="cards" v-bind:src="card.images.png"/>
+        </div>
+      </div>
+      
+      <div class="flex-container-col">
+        <div v-for="card in hand_2">
+          <img class="cards" v-bind:src="card.images.png">
+        </div>
+        <div class="item">
+          </div>
+          -->
   </div>
-  
+  </div>
+  </div>
+
   <footer class="footer">
-    <a href="https://github.com/mkba14/cs260_creative_project_node.git">Github Classroom</a>
+    <a href="https://github.com/mkba14/cs235_creative_project_node.git">Github Classroom</a>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js" integrity="sha256-lrZTgsdM1iVdRigETFOU8u8/BmLX1ysQ8bzrULbuVFU=" crossorigin="anonymous"></script>
