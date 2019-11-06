@@ -21,9 +21,15 @@
       </div>
     </div>
     <div class="flex-container-row">
-
+      <div class="cards_hidden">
+        <img class="img" src="images/blank_2.png">
+      </div>
       <div class="cards" v-for="card in hand_1">
         <img class="img" v-bind:src="card.images.png" />
+      </div>
+      <div class="cards">
+        <img class="img" src="images/brown_bubbles_back.png">
+
       </div>
     </div>
 
@@ -39,31 +45,17 @@
         </form>
       </div>
       <div class="flex-container-row">
-
+        <div class="cards_hidden">
+          <img class="img" src="images/blank_2.png">
+        </div>
         <div class="cards" v-for="card in hand_2">
           <img class="img" v-bind:src="card.images.png" />
         </div>
+
       </div>
 
 
     </div>
-    <!--
-    <div class="flex-container-row">
-      <div class="flex-container-col">
-        <div v-for="card in hand_1">
-          <img class="cards" v-bind:src="card.images.png"/>
-        </div>
-      </div>
-      
-      <div class="flex-container-col">
-        <div v-for="card in hand_2">
-          <img class="cards" v-bind:src="card.images.png">
-        </div>
-        <div class="item">
-          </div>
-          -->
-  </div>
-  </div>
   </div>
 
   <footer class="footer">

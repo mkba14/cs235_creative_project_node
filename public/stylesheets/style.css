@@ -53,6 +53,13 @@ a {
   width: 10%
 }
 
+.cards_hidden{
+  width: 0%;
+  opacity: 50%;
+  filter: invert(100%);
+  z-index: -1;
+}
+
 
 .img{
   /*max-height: 200px;*/
