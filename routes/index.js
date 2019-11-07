@@ -24,6 +24,7 @@ router.get('/cards/draw', function(req, res, next) {
 });
 
 router.get('/cards/shuffle', function(req, res, next){
+  console.log("shuffling cards");
    var data = "https://deckofcardsapi.com/api/deck/" + req.query.id + "/shuffle/";
    request(data).pipe(res);
 });
